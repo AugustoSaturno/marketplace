@@ -18,6 +18,9 @@
     font-size: 1.4rem;
     height: 100vh;
     width: 100vw;
+    display: grid;
+    grid-template-rows:
+      auto 1fr auto;
   }
   
   header {
@@ -52,6 +55,87 @@
     background-color: blueviolet;
   }
   
-  footer {
+  .footer {
+    
     background-color: green;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 80rem
+    margin: 0 auto;
+    
+  }
+
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #footer-link {
+    width: 25%;
+    padding: 0 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #footer-link h4 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    border-bottom: 0.2rem solid blue;
+    padding-bottom: 0.3rem;
+    display: inline-block;
+  }
+
+  #footer-link div a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: blue;
+    display: block;
+    margin-bottom: 1.5rem;
+    transition: all .3s ease;
+
+  }
+
+  #footer-link div a:hover {
+    color: blue;
+    padding-left: 0.3rem;
+  }
+
+  .social-link a {
+    display: inline-block;
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: gray;
+    margin: 0 0.9rem 0.9rem 0;
+    text-align: center;
+    line-height: 1rem;
+    border-radius: 40%;
+    color: white;
+    transition: all .5s ease;
+  }
+
+  .social-link h4 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    border-bottom: 0.2rem solid blue;
+    padding-bottom: 0.3rem;
+  
+  }
+
+  #logo-end-img {
+    margin-right: 30rem;
+    height: 7rem;
+    width: 10rem;
+  }
+  
+  #copy {
+    margin-top: 20px;
+    font-size: 0.9rem;
   }
