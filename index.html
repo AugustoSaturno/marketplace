@@ -2,19 +2,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <link rel="stylesheet" href="styles/default-styles.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <title>B&W Dragon</title>
 </head>
 <body>
     <header>
-        <a href="#"><img src="styles/10be3f46bb797772934279d8cf220a82.png" alt="Image logo" id="logo-img"></a>
+        <img src="styles/resources/logo-img.png" alt="Image logo" id="logo-img-header">
         <div id="container-buttons">
-            <button>Home</button>
-            <button>Categories</button>
-            <button>Services</button>
-            <button>Contact</button>
-            <button>Login</button>
+            <button class="header-buttons">Home</button>
+            <button class="header-buttons">Categories</button>
+            <button class="header-buttons">Services</button>
+            <button class="header-buttons">Contact</button>
+            <button class="header-buttons">Login</button>
         </div>
     </header>   
     <main>
@@ -26,7 +28,7 @@
                 <p>$10.00</p>
                 <p>test description example</p>
             </div>
-            <div class="card">
+            <!--<div class="card">
                 <img src="" alt="">
                 <h3>test title example</h3>
                 <p>$20.00</p>
@@ -37,39 +39,30 @@
                 <h3>test title example</h3>
                 <p>$30.00</p>
                 <p>test description example</p>
-            </div>
+            </div>-->
         </section>
     </main> 
     <footer class="footer"> 
-
-       <section class="container">
-        
-            <section class="footer-row">
-
-                <a href="#"><img src="styles/10be3f46bb797772934279d8cf220a82.png" alt="Image logo" id="logo-end-img"></a>
-
-                <address id="footer-link">
-
-                    <h4>Contact</h4>
-                    <div>Email: <a href="#">info@example.com</a></div><br>
-                    <div>Phone: +58 159 35 25</div>
-                    
-                </address>
-                <section class="social-link">
-
-                    <h4>Social Network</h4>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-
-                </section>
-                
-                <p id="copy">&copy; 2024 B&W Dragon. All rights reserves.</p>
-
+        <div id="section-container">
+            <section id="contact">
+                <h3>Contact</h3>
+                <p><span>Email: </span>info@test.com</p>
+                <p><span>Phone number: </span>555 3854</p>
             </section>
-
-       </section>
-
-    </footer>
+            <section id="slogan">
+                <img src="styles/resources/logo-img.png" alt="Image logo">
+                <p>Test slogan bussines</p>
+            </section>
+            <section id="social-networks">
+                <h3>Social Networks</h3>
+                <div id="img-container">
+                    <img src="styles/resources/instagram-svg.svg" alt="Instagram">
+                    <img src="styles/resources/linkedin-svg.svg" alt="LinkedIn">
+                    <img src="styles/resources/github-svg.svg" alt="Github">
+                </div>
+            </section>
+        </div>
+        <h3>© All rights reserved 2024.</h3>
+    </footer> 
 </body>
 </html>
